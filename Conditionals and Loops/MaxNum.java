@@ -21,16 +21,19 @@ public class MaxNum {
         // } 
 
         // second method
-        int max = 0;
-        if(n1 < n2) {
-            max = n2;
-        } else{
-            max = n1;
-        }
+        // int max = 0;
+        // if(n1 < n2) {
+        //     max = n2;
+        // } else{
+        //     max = n1;
+        // }
 
-        if (n3 > max){
-            max = n3;
-        }
+        // if (n3 > max){
+        //     max = n3;
+        // }
+
+        //third method
+        int max = Math.max(n3,Math.max(n1,n2));
 
         System.out.println("Max is : " + max);
 
