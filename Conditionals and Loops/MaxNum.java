@@ -33,10 +33,25 @@ public class MaxNum {
         // }
 
         //third method
-        int max = Math.max(n3,Math.max(n1,n2));
+        // int max = Math.max(n3,Math.max(n1,n2));
+        
+        // System.out.println("Max is : " + max);
 
-        System.out.println("Max is : " + max);
 
+        // fourth method 
+        if(n1 > n2){
+            if(n1 > n3){
+                System.out.println("Max is : "+n1);
+            } else{
+                System.out.println("Max is : "+n3);
+            }
+        } else {
+            if(n2 > n3){
+                System.out.println("Max is : "+n2);
+            } else {
+                System.out.println("Max is : "+n3);
+            }
+        }
 
     }
 }
