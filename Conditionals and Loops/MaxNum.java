@@ -10,17 +10,29 @@ public class MaxNum {
         int n2 = n.nextInt();
         int n3 = n.nextInt();
 
-        int max = n1;
+        //first method
+        // int max = n1;
+        // if(max < n2){
+        //     max = n2;
+        // } 
 
-        if(max < n2){
+        // if (max < n3){
+        //     max = n3;
+        // } 
+
+        // second method
+        int max = 0;
+        if(n1 < n2) {
             max = n2;
-        } 
-        
-        if (max < n3){
-            max = n3;
-        } 
+        } else{
+            max = n1;
+        }
 
-        System.out.println("Max is :" + max);
+        if (n3 > max){
+            max = n3;
+        }
+
+        System.out.println("Max is : " + max);
 
 
     }
