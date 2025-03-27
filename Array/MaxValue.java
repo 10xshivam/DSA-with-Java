@@ -12,7 +12,7 @@ public class MaxValue {
 
     static int max(int[] arr){
         if(arr.length == 0){
-            return -1
+            return -1;
         }
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -25,11 +25,11 @@ public class MaxValue {
 
     static int max(int[] arr, int start, int end){
         if(start > end){
-            return -1
+            return -1;
         }
 
         if(arr == null){
-            return -1
+            return -1;
         }
 
         int max = arr[0];
