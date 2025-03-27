@@ -11,6 +11,9 @@ public class MaxValue {
     }
 
     static int max(int[] arr){
+        if(arr.length == 0){
+            return -1
+        }
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if(max < arr[i]){
@@ -20,9 +23,17 @@ public class MaxValue {
         return max;
     }
 
-    static int max(int[] arr, int index1, int index2){
+    static int max(int[] arr, int start, int end){
+        if(start > end){
+            return -1
+        }
+
+        if(arr == null){
+            return -1
+        }
+
         int max = arr[0];
-        for (int i = index1; i < index2; i++) {
+        for (int i = start; i < end; i++) {
             if(max < arr[i]){
                 max = arr[i];
             }
