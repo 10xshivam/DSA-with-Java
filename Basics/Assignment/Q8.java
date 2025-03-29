@@ -27,5 +27,6 @@ public class Q8 {
         } else {
             System.out.println("Not Palindrome");
         }
+        in.close();
     }
 }
