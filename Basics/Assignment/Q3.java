@@ -12,5 +12,6 @@ public class Q3 {
 
         int simpleInterest = (P * R * T) / 100;
         System.out.println("Simple Interest = " + simpleInterest);
+        in.close();
     }
 }
