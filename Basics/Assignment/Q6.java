@@ -13,5 +13,7 @@ public class Q6 {
         float convert = amount / exchangeRate;
 
         System.out.println(amount + " INR"  + " = " + convert + " USD");
+
+        in.close();
     }
 }
