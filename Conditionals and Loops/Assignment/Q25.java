@@ -18,5 +18,6 @@ public class Q25 {
             }
         }
         System.out.println("Largest is " + largest);
+        in.close();
     }   
 }
