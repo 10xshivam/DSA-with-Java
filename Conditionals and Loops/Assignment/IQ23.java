@@ -13,5 +13,7 @@ public class IQ23 {
         } else {
             System.out.println("Not Leap year.");
         }
+
+        in.close();
     }
 }
