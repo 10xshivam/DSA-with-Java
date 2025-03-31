@@ -14,11 +14,8 @@ public class Q9 {
         int factorial = 1;
 
         for (int i = n; i >= 1; i--) {
-            System.out.print(i);
-            if (i > 1) {
-                System.out.print(" * ");
-            }
-            factorial *= i;
+            System.out.print(i + " * ");
+            factorial *= i ;
         }
         System.out.println(" = " + factorial);
     }
@@ -27,6 +24,5 @@ public class Q9 {
         System.out.print("Enter the number : ");
         int num = in.nextInt();
         factorial(num);
-        in.close();
     }
 }
