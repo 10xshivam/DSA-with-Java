@@ -46,5 +46,6 @@ public class Q1 {
 
         System.out.println("Maximum Number = " + getMax(num1, num2, num3));
         System.out.println("Minimum Number = " + getMin(num1, num2, num3));
+        in.close();
     }
 }
