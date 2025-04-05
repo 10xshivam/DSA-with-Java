@@ -7,11 +7,11 @@ public class LC1431 {
     static public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> list = new ArrayList<>();
         for(int i = 0; i < candies.length; i++){
-            int newCandies = candies[i] + extraCandies;
-            System.out.println(newCandies);
+            int max = candies[i] + extraCandies;
+            System.out.println(max);
             boolean result = true;
             for(int j = 0; j < candies.length; j++){
-                if(newCandies < candies[j]){
+                if(max <= candies[j]){
                     result = false;
                 }
             }
