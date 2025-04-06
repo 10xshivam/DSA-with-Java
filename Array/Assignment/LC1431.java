@@ -6,19 +6,16 @@ import java.util.List;
 public class LC1431 {
     static public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> list = new ArrayList<>();
+        int max = candies[0];
         for(int i = 0; i < candies.length; i++){
-            int max = candies[i] + extraCandies;
-            System.out.println(max);
-            boolean result = true;
-            for(int j = 0; j < candies.length; j++){
-                if(max <= candies[j]){
-                    result = false;
-                }
+            if(max < candies[i]){
+                max = candies[i];
             }
-            System.out.println(result);
-            list.add(result);
         }
-        return list;
+
+        for(int i = 0; i < candies.length; i++){
+            list.add(max <= candies[i]+ extraCandies);
+        }
     }
 
     public static void main(String[] args) {
