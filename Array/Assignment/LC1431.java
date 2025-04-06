@@ -16,6 +16,7 @@ public class LC1431 {
         for(int i = 0; i < candies.length; i++){
             list.add(max <= candies[i]+ extraCandies);
         }
+        return list;
     }
 
     public static void main(String[] args) {
