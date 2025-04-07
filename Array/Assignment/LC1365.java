@@ -1,3 +1,5 @@
+package Array.Assignment;
+
 public class LC1365 {
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] result = new int[nums.length];
