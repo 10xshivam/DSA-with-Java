@@ -35,9 +35,27 @@ public class MaxSubarray {
         }
         return max;
     }
+    
+    // Kadane's Algorithm
+    public static int kadanealgo(int[] arr){
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            if(sum < 0){
+                sum = 0;
+            }
+            max = Math.max(max, sum);
+        }
+        return max;
+    }
+
     public static void main(String[] args) {
-        int[] arr = {2,4,6,8,10};
+        // int[] arr = {2,4,6,8,10};
+        int[] arr = {-2,-3,4,-1,-2,1,5,-3}; 
+        // int[] arr = {-1,-2,-3,-4}; // for KA as it gives zero for all negative numbers
         System.out.println(maxSubarrayBF(arr));
         System.out.println(maxSubarrayPA(arr));
+        System.out.println(kadanealgo(arr));
     }
 }
